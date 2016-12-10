@@ -1,0 +1,11 @@
+Include
+Lib
+tcl
+Scripts
+tags
+bin
+include
+lib
+pip-selfcheck.json
+.vscode
+*.pyc

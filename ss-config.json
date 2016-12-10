@@ -1,0 +1,1 @@
+{"port_password": {"8384": "foobar4", "8383": "foobar3", "8382": "foobar2", "8381": "foobar1", "8821": "yes your"}, "method": "aes-256-cfb", "timeout": 300, "server": "0.0.0.0"}
