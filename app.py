@@ -1,5 +1,6 @@
 hashkey = None
 url = None
+hash_str_format = "{method}:{body}-{key}"
 
 import os
 import sys
@@ -17,7 +18,7 @@ def auth_check():
     if hashkey == None:
         return None
     hash_str = request.headers.get('SS-Hash')
-    origin_string = "{method}:{body}-{key}".format(method=request.method, body=request.data, key=hashkey)
+    origin_string = hash_str_format.format(method=request.method, body=request.data, key=hashkey)
     md5_object = md5()
     md5_object.update(origin_string)
     print md5_object.hexdigest()
