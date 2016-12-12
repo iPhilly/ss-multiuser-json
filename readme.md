@@ -53,9 +53,9 @@ This data will be proxy to the url that set before.
 
 the hash caculation can be described as
 
-1. put http method, request body and hash key togather with the format like as strings
+1. put http method, request body and hash key togather with the format as strings
 
-    method:body-key
+        {method}:{body}-{key}
 2. caculate the md5 value of the string
 
 
